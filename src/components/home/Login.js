@@ -5,6 +5,7 @@ import {useAuth} from '../context/AuthContext'
 import {estateApi} from '../misc/EstateApi'
 import {parseJwt, getSocialLoginUrl, handleLogError} from '../misc/Helpers'
 import Footer from "../Footer";
+import "./login.css"
 
 function Login() {
     const Auth = useAuth()
@@ -52,7 +53,7 @@ function Login() {
     }
 
     return (
-        <div>
+        <div className='login-form'>
             <Grid textAlign='center'>
                 <Grid.Column style={{maxWidth: 450}}>
                     <Form size='large' onSubmit={handleSubmit}>
@@ -82,6 +83,17 @@ function Login() {
                         <NavLink to="/signup" color='grey'>Sign Up</NavLink>
                     </Message>
                     {isError && <Message negative>The username or password provided are incorrect!</Message>}
+
+                    <Divider horizontal>or connect with</Divider>
+
+        <Menu compact icon='labeled'>
+          <Menu.Item name='github' href={getSocialLoginUrl('github')}>
+            <Icon name='github' />Github
+          </Menu.Item>
+          <Menu.Item name='google' href={getSocialLoginUrl('google')}>
+            <Icon name='google' />Google
+          </Menu.Item>
+        </Menu>
                 </Grid.Column>
             </Grid>
             <Footer/>

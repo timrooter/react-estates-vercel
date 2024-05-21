@@ -10,6 +10,9 @@ import OAuth2Redirect from './components/home/OAuth2Redirect'
 import AdminPage from './components/admin/AdminPage'
 import UserPage from './components/user/UserPage'
 import About from "./components/About";
+import PaymentCancel from './components/payment/PaymentCancel';
+import PaymentSuccess from './components/payment/PaymentSuccess';
+import EmailSuccess from './components/email/EmailSuccess'
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
           <Route path="/adminpage" element={<PrivateRoute><AdminPage /></PrivateRoute>}/>
           <Route path="/userpage" element={<PrivateRoute><UserPage /></PrivateRoute>}/>
           <Route path="*" element={<Navigate to="/" />}/>
+          <Route path="/payment/success" element={<PaymentSuccess/>} />
+          <Route path="/payment/cancel" element={<PaymentCancel/>} />
+          <Route path="/emailconfirm" element={<EmailSuccess/>} />
         </Routes>
       </Router>
     </AuthProvider>

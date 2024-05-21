@@ -1,10 +1,11 @@
 import React, {useState} from 'react'
 import {NavLink, Navigate} from 'react-router-dom'
-import {Button, Form, Grid, Segment, Message} from 'semantic-ui-react'
+import {Button, Form, Grid, Icon, Segment, Menu, Message, Divider} from 'semantic-ui-react'
 import {useAuth} from '../context/AuthContext'
 import {estateApi} from '../misc/EstateApi'
-import {parseJwt, handleLogError} from '../misc/Helpers'
+import {parseJwt, handleLogError,getSocialLoginUrl} from '../misc/Helpers'
 import Footer from "../Footer";
+import "./signup.css"
 
 function Signup() {
     const Auth = useAuth()
@@ -73,7 +74,7 @@ function Signup() {
     }
 
     return (
-        <div>
+        <div className='signup-form'>
             <Grid textAlign='center'>
                 <Grid.Column style={{maxWidth: 450}}>
                     <Form size='large' onSubmit={handleSubmit}>
@@ -119,6 +120,17 @@ function Signup() {
                         <NavLink to="/login" color='grey'>Login</NavLink>
                     </Message>
                     {isError && <Message negative>{errorMessage}</Message>}
+
+                    <Divider horizontal>or connect with</Divider>
+
+                    <Menu compact icon='labeled'>
+                    <Menu.Item name='github' href={getSocialLoginUrl('github')}>
+                        <Icon name='github' />Github
+                    </Menu.Item>
+                    <Menu.Item name='google' href={getSocialLoginUrl('google')}>
+                        <Icon name='google' />Google
+                    </Menu.Item>
+                    </Menu>
                 </Grid.Column>
             </Grid>
             <Footer/>

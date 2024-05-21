@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7be7e781-4311-4f98-81d3-d001db809da0" name="Changes" comment="" />
+    <list default="true" id="7be7e781-4311-4f98-81d3-d001db809da0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/user/EstateList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/EstateList.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +77,15 @@
       <workItem from="1709734495306" duration="582000" />
       <workItem from="1709985994968" duration="461000" />
       <workItem from="1709986469766" duration="67000" />
+      <workItem from="1709986556194" duration="186000" />
+      <workItem from="1709987797962" duration="29000" />
+      <workItem from="1709987852901" duration="155000" />
+      <workItem from="1712665953176" duration="387000" />
+      <workItem from="1713194856147" duration="11000" />
+      <workItem from="1716129524160" duration="15000" />
+      <workItem from="1716129681602" duration="3085000" />
+      <workItem from="1716227312922" duration="3169000" />
+      <workItem from="1716274301384" duration="317000" />
     </task>
     <servers />
   </component>
